@@ -4,30 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2E3BC6"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:text="@string/heading"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:fontFamily="casual"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/grid"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/grid" />
 
     <LinearLayout
@@ -151,7 +139,7 @@
         android:layout_marginBottom="15sp"
         android:text="@string/status"
         android:textSize="18sp"
-        android:textStyle="italic"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -161,11 +149,26 @@
         android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
         android:background="@android:drawable/ic_menu_revert"
         android:onClick="gameReset"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/resetButton"
+        app:layout_constraintVertical_bias="0.117" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/NavView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".Main2Activity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="65sp"
+        android:background="@drawable/custombutton"
+        android:ellipsize="middle"
+        android:padding="10sp"
+        android:text="Start Game"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="65sp"
+        android:background="@drawable/custombutton"
+        android:padding="0sp"
+        android:text="Rules"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="65sp"
+        android:background="@drawable/custombutton"
+        android:padding="10sp"
+        android:text="About"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_weight="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
